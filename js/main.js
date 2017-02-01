@@ -66,7 +66,6 @@ function main() {
                 [1400, 4],
                 [1600, 4]
               ],*/
-*/
   	$(document).ready(function() {
   	  $("#team").owlCarousel({
   	 
