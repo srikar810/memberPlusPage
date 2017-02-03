@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Basic Page Needs
     ================================================== -->
     <meta charset="utf-8">
@@ -16,7 +17,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
 
     <!-- Slider
@@ -26,460 +27,616 @@
 
     <!-- Stylesheet
     ================================================== -->
-    <link rel="stylesheet" type="text/css"  href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="pe-icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet">
     <link rel="stylesheet" href="pe-icon-7-stroke/css/helper.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
 
-    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic'
+        rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400'
+            rel='stylesheet' type='text/css'>
 
-    <script type="text/javascript" src="js/modernizr.custom.js"></script>
+            <script type="text/javascript" src="js/modernizr.custom.js"></script>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+            <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+            <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+            <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <style>
-	.r-form-1-top {
-	overflow: hidden; padding: 0 25px 15px 25px; background: #444; background: rgba(0, 0, 0, 0.35); text-align: left;
-	-moz-border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; border-radius: 4px 4px 0 0;
-}
-.r-form-1-top-left { float: left; width: 75%; padding-top: 25px; }
-.r-form-1-top-left h3 { margin-top: 0; color: #fff; }
-.r-form-1-top-left p { opacity: 0.8; color: #fff; }
-.r-form-1-top-right { float: left; width: 25%; padding-top: 5px; font-size: 66px; color: #fff; line-height: 100px; text-align: right; opacity: 0.3; }
-.r-form-1-bottom {
-	padding: 25px; background: #444; background: rgba(0, 0, 0, 0.3); text-align: left;
-	-moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; border-radius: 0 0 4px 4px;
-}
-.r-form-1-bottom .terms { margin: 15px 0 0 0; opacity: 0.8; color: #fff; text-align: center; }
-.r-form-1-bottom .terms a:hover,
-.r-form-1-bottom .terms a:focus { outline: 0; border-bottom: 1px dotted #e38f42; }
+            <style>
+                .r-form-1-top {
+                    overflow: hidden;
+                    padding: 0 25px 15px 25px;
+                    background: #444;
+                    background: rgba(0, 0, 0, 0.35);
+                    text-align: left;
+                    -moz-border-radius: 4px 4px 0 0;
+                    -webkit-border-radius: 4px 4px 0 0;
+                    border-radius: 4px 4px 0 0;
+                }
+                
+                .r-form-1-top-left {
+                    float: left;
+                    width: 75%;
+                    padding-top: 25px;
+                }
+                
+                .r-form-1-top-left h3 {
+                    margin-top: 0;
+                    color: #fff;
+                }
+                
+                .r-form-1-top-left p {
+                    opacity: 0.8;
+                    color: #fff;
+                }
+                
+                .r-form-1-top-right {
+                    float: left;
+                    width: 25%;
+                    padding-top: 5px;
+                    font-size: 66px;
+                    color: #fff;
+                    line-height: 100px;
+                    text-align: right;
+                    opacity: 0.3;
+                }
+                
+                .r-form-1-bottom {
+                    padding: 25px;
+                    background: #444;
+                    background: rgba(0, 0, 0, 0.3);
+                    text-align: left;
+                    -moz-border-radius: 0 0 4px 4px;
+                    -webkit-border-radius: 0 0 4px 4px;
+                    border-radius: 0 0 4px 4px;
+                }
+                
+                .r-form-1-bottom .terms {
+                    margin: 15px 0 0 0;
+                    opacity: 0.8;
+                    color: #fff;
+                    text-align: center;
+                }
+                
+                .r-form-1-bottom .terms a:hover,
+                .r-form-1-bottom .terms a:focus {
+                    outline: 0;
+                    border-bottom: 1px dotted #e38f42;
+                }
+                
+                .r-form-1-box input[type="text"],
+                .r-form-1-box textarea,
+                .r-form-1-box textarea.form-control {
+                    height: 50px;
+                    margin: 0;
+                    padding: 0 20px;
+                    vertical-align: middle;
+                    background: #fff;
+                    border: 3px solid #fff;
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 50px;
+                    color: #888;
+                    -moz-border-radius: 4px;
+                    -webkit-border-radius: 4px;
+                    border-radius: 4px;
+                    -moz-box-shadow: none;
+                    -webkit-box-shadow: none;
+                    box-shadow: none;
+                    -o-transition: all .3s;
+                    -moz-transition: all .3s;
+                    -webkit-transition: all .3s;
+                    -ms-transition: all .3s;
+                    transition: all .3s;
+                }
+                
+                .r-form-1-box textarea,
+                .r-form-1-box textarea.form-control {
+                    height: 100px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    line-height: 30px;
+                }
+                
+                .r-form-1-box input[type="text"]:focus,
+                .r-form-1-box textarea:focus,
+                .r-form-1-box textarea.form-control:focus {
+                    outline: 0;
+                    background: #fff;
+                    border: 3px solid #e38f42;
+                    -moz-box-shadow: none;
+                    -webkit-box-shadow: none;
+                    box-shadow: none;
+                }
+                
+                .r-form-1-box input[type="text"]::-moz-placeholder,
+                .r-form-1-box textarea::-moz-placeholder,
+                .r-form-1-box textarea.form-control::-moz-placeholder {
+                    color: #888;
+                }
+                
+                .r-form-1-box input[type="text"]:-ms-input-placeholder,
+                .r-form-1-box textarea:-ms-input-placeholder,
+                .r-form-1-box textarea.form-control:-ms-input-placeholder {
+                    color: #888;
+                }
+                
+                .r-form-1-box input[type="text"]::-webkit-input-placeholder,
+                .r-form-1-box textarea::-webkit-input-placeholder,
+                .r-form-1-box textarea.form-control::-webkit-input-placeholder {
+                    color: #888;
+                }
+                
+                .r-form-1-box button.btn {
+                    width: 100%;
+                    height: 50px;
+                    margin: 0;
+                    padding: 0 20px;
+                    vertical-align: middle;
+                    background: #e38f42;
+                    border: 0;
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 50px;
+                    color: #fff;
+                    -moz-border-radius: 4px;
+                    -webkit-border-radius: 4px;
+                    border-radius: 4px;
+                    text-shadow: none;
+                    -moz-box-shadow: none;
+                    -webkit-box-shadow: none;
+                    box-shadow: none;
+                    -o-transition: all .3s;
+                    -moz-transition: all .3s;
+                    -webkit-transition: all .3s;
+                    -ms-transition: all .3s;
+                    transition: all .3s;
+                }
+                
+                .r-form-1-box button.btn:hover {
+                    opacity: 0.6;
+                    color: #fff;
+                }
+                
+                .r-form-1-box button.btn:active {
+                    outline: 0;
+                    opacity: 0.6;
+                    color: #fff;
+                    -moz-box-shadow: none;
+                    -webkit-box-shadow: none;
+                    box-shadow: none;
+                }
+                
+                .r-form-1-box button.btn:focus {
+                    outline: 0;
+                    opacity: 0.6;
+                    background: #e38f42;
+                    color: #fff;
+                }
+                
+                .r-form-1-box button.btn:active:focus,
+                .r-form-1-box button.btn.active:focus {
+                    outline: 0;
+                    opacity: 0.6;
+                    background: #e38f42;
+                    color: #fff;
+                }
+                
+                .about {
+                    background: #F1F1F1;
+                }
+                
+                .inner_about_area {
+                    padding-top: 50px;
+                }
+                
+                .inner_about_title {
+                    padding-bottom: 50px;
+                }
+                
+                .inner_about_title h2 {
+                    text-transform: uppercase;
+                    font-weight: 800;
+                    font-size: 30px;
+                    line-height: 37px;
+                    position: relative;
+                }
+                
+                .inner_about_title h2:after {
+                    content: "";
+                    position: absolute;
+                    bottom: -12px;
+                    left: 0;
+                    width: 70px;
+                    background: #008cc4;
+                    height: 1px;
+                }
+                
+                .inner_about_title p {
+                    font-size: 19px;
+                    line-height: 24px;
+                    margin-top: 40px;
+                }
+                
+                .inner_about_desc {}
+                
+                .single_about_area {
+                    position: relative;
+                    padding-bottom: 4px;
+                    padding-left: 80px;
+                }
+                
+                .single_about_area div {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                }
+                
+                .single_about_area div i {
+                    font-size: 55px;
+                    color: #BABABA;
+                    -webkit-transition: all 1s;
+                    -moz-transition: all 1s;
+                    -o-transition: all 1s;
+                    transition: all 1s;
+                }
+                
+                .single_about_area h3 {
+                    color: #343434;
+                    text-transform: uppercase;
+                    font-size: 20px;
+                    font-weight: 800;
+                }
+                
+                .single_about_area p {
+                    color: #727272;
+                    font-size: 14px;
+                }
+                
+                .single_about_area:hover div i {
+                    color: #f39c12;
+                }
+                
+                .about_phone img {}
+                
+                @media (min-width: 991px) and (max-width: 1200px) {
+                    .about_phone img {
+                        margin-top: 184px;
+                        width: 80%;
+                        margin-right: 20%
+                    }
+                }
+                
+                .section_title {
+                    padding-top: 90px;
+                    padding-bottom: 50px;
+                }
+                
+                .section_title h2 {
+                    text-transform: uppercase;
+                    text-align: center;
+                    position: relative;
+                    color: #333;
+                    font-size: 30px;
+                    font-weight: 400;
+                }
+                
+                .section_title h2:after {
+                    content: "";
+                    position: absolute;
+                    bottom: -20px;
+                    width: 60px;
+                    height: 1px;
+                    background-color: #008cc4;
+                    left: 50%;
+                    margin-left: -30px;
+                }
+                
+                .section_title p {
+                    text-align: center;
+                    margin-top: 45px;
+                    color: #333;
+                    font-size: 18px;
+                    line-height: 28px;
+                    font-weight: 300;
+                }
+                
+                .section-title.center .line {
+                    border-top: 4px solid #008cc4;
+                    height: 10px;
+                    width: 60px;
+                    text-align: center;
+                    margin: 0 auto;
+                    margin-top: 20px;
+                }
+                
+                .parallax {
+                    background-attachment: fixed !important;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                
+                .video_area {
+                    background: #e4e4e4;
+                    padding-bottom: 140px;
+                    padding-top: 120px;
+                }
+                
+                .video_title {
+                    padding-bottom: 30px;
+                }
+                
+                .video_title h2 {
+                    text-transform: uppercase;
+                    font-weight: 800;
+                    font-size: 30px;
+                    line-height: 37px;
+                    position: relative;
+                    margin-top: 0px;
+                }
+                
+                .video_title h2:after {
+                    content: "";
+                    position: absolute;
+                    bottom: -12px;
+                    left: 0;
+                    width: 70px;
+                    background: #008cc4;
+                    height: 1px;
+                }
+                
+                .video_title p {
+                    font-size: 18px;
+                    line-height: 28px;
+                    margin-top: 40px;
+                    color: #333;
+                    font-weight: 300;
+                }
+                
+                .btn-video,
+                .btn-video:active,
+                .btn-video:focus,
+                .btn-video:visited {
+                    background: transparent;
+                    border: 1px solid #929292;
+                    color: #686868;
+                    border-radius: 3px;
+                    padding: 12px 35px;
+                    text-transform: uppercase;
+                    -webkit-transition: all 1s;
+                    -moz-transition: all 1s;
+                    -o-transition: all 1s;
+                    transition: all 1s;
+                }
+                
+                .btn-video:hover {
+                    background: #f39c12;
+                    color: #fff;
+                    border: 1px solid #f39c12;
+                }
+                
+                .video {}
+                
+                .video iframe {
+                    width: 100%;
+                    border: 1px solid #999999;
+                    padding: 5px;
+                }
+                
+                .features {
+                    background-color: #f1f1f1
+                }
+                
+                .feature_inner {
+                    padding-top: 30px;
+                    padding-bottom: 70px;
+                }
+                
+                .feature_iphone {}
+                
+                .feature_iphone img {
+                    width: 100%;
+                }
+                
+                .right_single_feature {
+                    position: relative;
+                    padding-left: 90px;
+                    margin-bottom: 65px;
+                    margin-top: 35px;
+                }
+                
+                .right_single_feature div {
+                    position: absolute;
+                    font-size: 40px;
+                    color: #f39c12;
+                    left: 0;
+                    width: 90px;
+                    height: 90px;
+                    text-align: center;
+                    top: -8px;
+                }
+                
+                .right_single_feature h3 {
+                    text-transform: uppercase;
+                    font-size: 25px;
+                    font-weight: 700;
+                    margin-bottom: 21px;
+                    color: #333333;
+                }
+                
+                .right_single_feature h3 span {
+                    color: #f39c12;
+                }
+                
+                .right_single_feature p {
+                    color: #333;
+                    font-size: 16px;
+                    font-weight: 300;
+                    line-height: 25px;
+                }
+                /*left feature*/
+                
+                .left_single_feature {
+                    position: relative;
+                    padding-right: 90px;
+                    margin-bottom: 65px;
+                    text-align: right;
+                    margin-top: 35px;
+                }
+                
+                .left_single_feature div {
+                    position: absolute;
+                    font-size: 40px;
+                    color: #f39c12;
+                    right: 0;
+                    width: 90px;
+                    height: 90px;
+                    text-align: center;
+                    top: -8px;
+                }
+                
+                .left_single_feature h3 {
+                    text-transform: uppercase;
+                    font-size: 25px;
+                    font-weight: 700;
+                    margin-bottom: 21px;
+                    color: #333333;
+                }
+                
+                .left_single_feature h3 span {
+                    color: #f39c12;
+                }
+                
+                .left_single_feature p {
+                    color: #333;
+                    font-size: 16px;
+                    font-weight: 300;
+                    line-height: 25px;
+                }
+                
+                .right_no_padding {
+                    padding-left: 15px;
+                }
+                
+                .left_no_padding {
+                    padding-right: 15px;
+                }
+                
+                @media (min-width: 991px) and (max-width: 1200px) {
+                    .right_single_feature {
+                        margin-left: -60px;
+                    }
+                    .left_single_feature {
+                        margin-right: -60px;
+                    }
+                    .feature_iphone {
+                        margin-top: 35px;
+                    }
+                    .right_single_feature h3,
+                    .left_single_feature h3 {
+                        margin-top: 0px;
+                        margin-bottom: 15px;
+                    }
+                }
+            </style>
+</head>
 
-.r-form-1-box input[type="text"], 
-.r-form-1-box textarea, 
-.r-form-1-box textarea.form-control {
-	height: 50px;
-    margin: 0;
-    padding: 0 20px;
-    vertical-align: middle;
-    background: #fff;
-    border: 3px solid #fff;
-    font-family: 'Raleway', sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 50px;
-    color: #888;
-    -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
-    -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
-    -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
-}
-
-.r-form-1-box textarea, 
-.r-form-1-box textarea.form-control { height: 100px; padding-top: 10px; padding-bottom: 10px; line-height: 30px; }
-
-.r-form-1-box input[type="text"]:focus, 
-.r-form-1-box textarea:focus, 
-.r-form-1-box textarea.form-control:focus {
-	outline: 0; background: #fff; border: 3px solid #e38f42;
-    -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
-}
-
-.r-form-1-box input[type="text"]::-moz-placeholder, 
-.r-form-1-box textarea::-moz-placeholder, 
-.r-form-1-box textarea.form-control::-moz-placeholder { color: #888; }
-
-.r-form-1-box input[type="text"]:-ms-input-placeholder, 
-.r-form-1-box textarea:-ms-input-placeholder, 
-.r-form-1-box textarea.form-control:-ms-input-placeholder { color: #888; }
-
-.r-form-1-box input[type="text"]::-webkit-input-placeholder, 
-.r-form-1-box textarea::-webkit-input-placeholder, 
-.r-form-1-box textarea.form-control::-webkit-input-placeholder { color: #888; }
-
-.r-form-1-box button.btn {
-	width: 100%;
-	height: 50px;
-    margin: 0;
-    padding: 0 20px;
-    vertical-align: middle;
-    background: #e38f42;
-    border: 0;
-    font-family: 'Raleway', sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 50px;
-    color: #fff;
-    -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
-    text-shadow: none;
-    -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
-    -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
-}
-
-.r-form-1-box button.btn:hover { opacity: 0.6; color: #fff; }
-.r-form-1-box button.btn:active { outline: 0; opacity: 0.6; color: #fff; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
-.r-form-1-box button.btn:focus { outline: 0; opacity: 0.6; background: #e38f42; color: #fff; }
-.r-form-1-box button.btn:active:focus, .r-form-1-box button.btn.active:focus { outline: 0; opacity: 0.6; background: #e38f42; color: #fff; }
-.about {
-    background: #F1F1F1;
-}
-.inner_about_area {
-    padding-top: 50px;
-}
-.inner_about_title {
-    padding-bottom: 50px;
-}
-.inner_about_title h2 {
-    text-transform: uppercase;
-    font-weight: 800;
-    font-size: 30px;
-    line-height: 37px;
-    position: relative;
-}
-.inner_about_title h2:after {
-    content: "";
-    position: absolute;
-    bottom: -12px;
-    left: 0;
-    width: 70px;
-    background: #008cc4;
-    height: 1px;
-}
-.inner_about_title p {
-    font-size: 19px;
-    line-height: 24px;
-    margin-top: 40px;
-}
-.inner_about_desc {} .single_about_area {
-    position: relative;
-    padding-bottom: 4px;
-    padding-left: 80px;
-}
-.single_about_area div {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-}
-.single_about_area div i {
-    font-size: 55px;
-    color: #BABABA;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
-}
-.single_about_area h3 {
-    color: #343434;
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: 800;
-}
-.single_about_area p {
-    color: #727272;
-    font-size: 14px;
-}
-.single_about_area:hover div i {
-    color: #f39c12;
-}
-.about_phone img {} @media (min-width: 991px) and (max-width: 1200px) {
-    .about_phone img {
-        margin-top: 184px;
-        width: 80%;
-        margin-right: 20%
-    }
-}
-.section_title {
-    padding-top: 90px;
-    padding-bottom: 50px;
-}
-.section_title h2 {
-    text-transform: uppercase;
-    text-align: center;
-    position: relative;
-    color: #333;
-    font-size: 30px;
-    font-weight: 400;
-}
-.section_title h2:after {
-    content: "";
-    position: absolute;
-    bottom: -20px;
-    width: 60px;
-    height: 1px;
-    background-color: #008cc4;
-    left: 50%;
-    margin-left: -30px;
-}
-.section_title p {
-    text-align: center;
-    margin-top: 45px;
-    color: #333;
-    font-size: 18px;
-    line-height: 28px;
-    font-weight: 300;
-}
-.section-title.center .line {
-    border-top: 4px solid #008cc4;
-    height: 10px;
-    width: 60px;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 20px;
-}
-.parallax {
-    background-attachment: fixed !important;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.video_area {
-    background: #e4e4e4;
-    padding-bottom: 140px;
-    padding-top: 120px;
-}
-.video_title {
-    padding-bottom: 30px;
-}
-.video_title h2 {
-    text-transform: uppercase;
-    font-weight: 800;
-    font-size: 30px;
-    line-height: 37px;
-    position: relative;
-    margin-top: 0px;
-}
-.video_title h2:after {
-    content: "";
-    position: absolute;
-    bottom: -12px;
-    left: 0;
-    width: 70px;
-    background: #008cc4;
-    height: 1px;
-}
-.video_title p {
-    font-size: 18px;
-    line-height: 28px;
-    margin-top: 40px;
-    color: #333;
-    font-weight: 300;
-}
-.btn-video,
-.btn-video:active,
-.btn-video:focus,
-.btn-video:visited {
-    background: transparent;
-    border: 1px solid #929292;
-    color: #686868;
-    border-radius: 3px;
-    padding: 12px 35px;
-    text-transform: uppercase;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
-}
-.btn-video:hover {
-    background: #f39c12;
-    color: #fff;
-    border: 1px solid #f39c12;
-}
-.video {} .video iframe {
-    width: 100%;
-    border: 1px solid #999999;
-    padding: 5px;
-}
-.features {
-    background-color: #f1f1f1
-}
-.feature_inner {
-    padding-top: 30px;
-    padding-bottom: 70px;
-}
-.feature_iphone {} .feature_iphone img {
-    width: 100%;
-}
-.right_single_feature {
-    position: relative;
-    padding-left: 90px;
-    margin-bottom: 65px;
-    margin-top: 35px;
-}
-.right_single_feature div {
-    position: absolute;
-    font-size: 40px;
-    color: #f39c12;
-    left: 0;
-    width: 90px;
-    height: 90px;
-    text-align: center;
-    top: -8px;
-}
-.right_single_feature h3 {
-    text-transform: uppercase;
-    font-size: 25px;
-    font-weight: 700;
-    margin-bottom: 21px;
-    color: #333333;
-}
-.right_single_feature h3 span {
-    color: #f39c12;
-}
-.right_single_feature p {
-    color: #333;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 25px;
-}
-/*left feature*/
-
-.left_single_feature {
-    position: relative;
-    padding-right: 90px;
-    margin-bottom: 65px;
-    text-align: right;
-    margin-top: 35px;
-}
-.left_single_feature div {
-    position: absolute;
-    font-size: 40px;
-    color: #f39c12;
-    right: 0;
-    width: 90px;
-    height: 90px;
-    text-align: center;
-    top: -8px;
-}
-.left_single_feature h3 {
-    text-transform: uppercase;
-    font-size: 25px;
-    font-weight: 700;
-    margin-bottom: 21px;
-    color: #333333;
-}
-.left_single_feature h3 span {
-    color: #f39c12;
-}
-.left_single_feature p {
-    color: #333;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 25px;
-}
-.right_no_padding {
-    padding-left: 15px;
-}
-.left_no_padding {
-    padding-right: 15px;
-}
-@media (min-width: 991px) and (max-width: 1200px) {
-    .right_single_feature {
-        margin-left: -60px;
-    }
-    .left_single_feature {
-        margin-right: -60px;
-    }
-    .feature_iphone {
-        margin-top: 35px;
-    }
-    .right_single_feature h3,
-    .left_single_feature h3 {
-        margin-top: 0px;
-        margin-bottom: 15px;
-    }
-}
-
-    </style>
-  </head>
-  <body>
+<body>
     <!-- Navigation
     ==========================================-->
     <nav id="tf-menu" class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html" style="margin-top:-12px;"><img src="img/white-logo.png" width="240" height="46"></a>
-        </div>
+                <a class="navbar-brand" href="index.html" style="margin-top:-12px;"><img src="img/white-logo.png" width="240" height="46"></a>
+            </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#tf-home" class="page-scroll">Home</a></li>
-            <li><a href="#tf-about" class="page-scroll">About</a></li>
-            <li><a href="#tf-team" class="page-scroll">Team</a></li>
-            <li><a href="#tf-services" class="page-scroll">Services</a></li>
-          <!--   <li><a href="#tf-works" class="page-scroll">Portfolio</a></li>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#tf-home" class="page-scroll">Home</a></li>
+                    <li><a href="#tf-about" class="page-scroll">About</a></li>
+                    <li><a href="#tf-team" class="page-scroll">Team</a></li>
+                    <li><a href="#tf-services" class="page-scroll">Services</a></li>
+                    <!--   <li><a href="#tf-works" class="page-scroll">Portfolio</a></li>
           <li><a href="#tf-testimonials" class="page-scroll">Testimonials</a></li>
           <li><a href="#tf-contact" class="page-scroll">Contact</a></li> -->
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
     </nav>
 
     <!-- Home Page
     ==========================================-->
     <div id="tf-home" class="container-fluid">
         <div class="overlay container">
-        	<div class="row">
-        	<div class="col-md-6">
-            <div class="content">
-                <h1 style="color: #FFF;font-size:30px; font-weight:bold; line-height:50px;">U.S IMMIGRATION LAW HAS NEVER BEEN THIS
-					COMPLEX</h1>
-				<p class="lead" style="color: #FFF;font-size:25px;">Immigration Legal Advice and Strategy Counceling
-					for you and your family. Get the backing of our law firm for all your
-					immigration needs.</p>
-				<p class="lead" style="color: #FFF;font-size:18px;"></p>
-                
-            </div>
-            </div>
-            <div class="col-md-5 col-md-offset-1">
-            <div class="content">
-            <div class="r-form-1-box wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
-						<div class="r-form-1-top">
-							<div class="r-form-1-top-left">
-								<h3>Sign Up Now</h3>
-								<p>Fill in the form below to get instant access:</p>
-							</div>
-							<div class="r-form-1-top-right">
-								<i class="fa fa-pencil"></i>
-							</div>
-						</div>
-						<div class="r-form-1-bottom">
-							<form role="form" action="" method="post">
-								<div class="form-group">
-									<label class="sr-only" for="r-form-1-first-name">First name</label>
-									<input name="r-form-1-first-name" placeholder="First name..." class="r-form-1-first-name form-control" id="r-form-1-first-name" type="text">
-								</div>
-								<div class="form-group">
-									<label class="sr-only" for="r-form-1-last-name">Last name</label>
-									<input name="r-form-1-last-name" placeholder="Last name..." class="r-form-1-last-name form-control" id="r-form-1-last-name" type="text">
-								</div>
-								<div class="form-group">
-									<label class="sr-only" for="r-form-1-email">Email</label>
-									<input name="r-form-1-email" placeholder="Email..." class="r-form-1-email form-control" id="r-form-1-email" type="text">
-								</div>
-								<div class="form-group">
-									<label class="sr-only" for="r-form-1-about-yourself">About yourself</label>
-									<textarea name="r-form-1-about-yourself" placeholder="About yourself..." class="r-form-1-about-yourself form-control" id="r-form-1-about-yourself"></textarea>
-								</div>
-								<button type="submit" class="btn">Sign me up!</button>
-								<p class="terms">
-									By registering to our course using this form, you agree to our 
-									<a href="#" class="launch-modal" data-modal-id="modal-terms">Terms and Conditions</a>.
-								</p>
-							</form>
-						</div>
-					</div>
-            </div></div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="content">
+                        <h1 style="color: #FFF;font-size:30px; font-weight:bold; line-height:50px;">U.S IMMIGRATION LAW HAS NEVER BEEN THIS COMPLEX
+                        </h1>
+                        <p class="lead" style="color: #FFF;font-size:25px;">Immigration Legal Advice and Strategy Counceling for you and your family. Get the backing of our
+                            law firm for all your immigration needs.</p>
+                        <p class="lead" style="color: #FFF;font-size:18px;"></p>
+
+                    </div>
+                </div>
+                <div class="col-md-5 col-md-offset-1">
+                    <div class="content">
+                        <div class="r-form-1-box wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
+                            <div class="r-form-1-top">
+                                <div class="r-form-1-top-left">
+                                    <h3>Sign Up Now</h3>
+                                    <p>Fill in the form below to get instant access:</p>
+                                </div>
+                                <div class="r-form-1-top-right">
+                                    <i class="fa fa-pencil"></i>
+                                </div>
+                            </div>
+                            <div class="r-form-1-bottom">
+                                <form role="form" action="" method="post">
+                                    <div class="form-group">
+                                        <label class="sr-only" for="r-form-1-first-name">First name</label>
+                                        <input name="r-form-1-first-name" placeholder="First name..." class="r-form-1-first-name form-control" id="r-form-1-first-name"
+                                            type="text">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="sr-only" for="r-form-1-last-name">Last name</label>
+                                        <input name="r-form-1-last-name" placeholder="Last name..." class="r-form-1-last-name form-control" id="r-form-1-last-name"
+                                            type="text">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="sr-only" for="r-form-1-email">Email</label>
+                                        <input name="r-form-1-email" placeholder="Email..." class="r-form-1-email form-control" id="r-form-1-email" type="text">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="sr-only" for="r-form-1-about-yourself">About yourself</label>
+                                        <textarea name="r-form-1-about-yourself" placeholder="About yourself..." class="r-form-1-about-yourself form-control" id="r-form-1-about-yourself"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn">Sign me up!</button>
+                                    <p class="terms">
+                                        By registering to our course using this form, you agree to our
+                                        <a href="#" class="launch-modal" data-modal-id="modal-terms">Terms and Conditions</a>.
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -487,14 +644,14 @@
     <!-- About Us Page
     ==========================================-->
     <div id="tf-about">
-         <div class="container">
+        <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 text-center">
                     <!-- ABOUT US SECTION TITLE-->
                     <div class="section_title">
                         <h2>ABOUT MEMBERPLUS</h2>
-                        <p>MemberPlus is a feature accessible to all the beneficiaries registered on MyEsq Portal. Beneficiaries can subscribe to MemberPlus
-to take the immigration attorney advisory services.</p>
+                        <p>MemberPlus is a feature accessible to all the beneficiaries registered on MyEsq Portal. Beneficiaries
+                            can subscribe to MemberPlus to take the immigration attorney advisory services.</p>
                     </div>
                 </div>
 
@@ -505,18 +662,22 @@ to take the immigration attorney advisory services.</p>
                 <div class="row">
                     <div class="col-md-6">
                         <div class="about_phone wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s">
-                        <!-- PHONE -->
-                           <div style="background:#FFF; border:5px solid #cccccc; padding-left:30px; padding-top:30px; padding-bottom:20px;"><strong style="font-size:18px;">FOR LIMITED TIME ONLY</strong><br/><br/>
-                           	<p>You can subscribe to MemberPlus at an introductory offer price at $19.99 per month for a comprehensive advisory service on immigration. </p>
+                            <!-- PHONE -->
+                            <div style="background:#FFF; border:5px solid #cccccc; padding-left:30px; padding-top:30px; padding-bottom:20px;"><strong style="font-size:18px;">FOR LIMITED TIME ONLY</strong><br/><br/>
+                                <p>You can subscribe to MemberPlus at an introductory offer price at $19.99 per month for a
+                                    comprehensive advisory service on immigration. </p>
                             </div>
                             <br/><br/>
                             <div style="background:#FFF; border:5px solid #cccccc; padding-left:30px; padding-top:30px; padding-bottom:20px;"><strong style="font-size:18px">ARTICLES</strong><br/><br/>
-                           	<p>MemberPlus has host of articles addressing the complex immigration rules. The articles are authored by experienced immigration attorneys to address your needs.
-</p>
+                                <p>MemberPlus has host of articles addressing the complex immigration rules. The articles are
+                                    authored by experienced immigration attorneys to address your needs.
+                                </p>
                             </div>
                             <br/><br/>
                             <div style="background:#FFF; border:5px solid #cccccc; padding-left:30px; padding-top:30px; padding-bottom:20px;"><strong style="font-size:18px">APPOINTMENTS</strong><br/><br/>
-                           	<p>MemberPlus allows it's users to book an appointment with immigration attorneys at the click of a button. You can track your appointments from your registered account on MemberPlus.  </p>
+                                <p>MemberPlus allows it's users to book an appointment with immigration attorneys at the click
+                                    of a button. You can track your appointments from your registered account on MemberPlus.
+                                    </p>
                             </div>
                         </div>
                         <br/><br/>
@@ -525,7 +686,8 @@ to take the immigration attorney advisory services.</p>
                         <!-- TITLE -->
                         <div class="inner_about_title">
                             <h2>Why we are best <br> for you</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua.</p>
                         </div>
                         <div class="inner_about_desc">
 
@@ -535,7 +697,8 @@ to take the immigration attorney advisory services.</p>
                                 <div><i class="pe-7s-timer" style="color:#008cc4;"></i></div>
                                 <!-- HEADING DESCRIPTION -->
                                 <h3>Lorem ipsum dolor sit amet</h3>
-                                <p>Cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit.</p>
+                                <p>Cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed
+                                    ut perspiciatis unde omnis iste natus error sit.</p>
                             </div>
                             <!-- END SINGLE DESC -->
 
@@ -546,7 +709,8 @@ to take the immigration attorney advisory services.</p>
                                 <div><i class="pe-7s-target" style="color:#008cc4;"></i></div>
                                 <!-- HEADING DESCRIPTION -->
                                 <h3>Lorem ipsum dolor sit amet</h3>
-                                <p>Cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit.</p>
+                                <p>Cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed
+                                    ut perspiciatis unde omnis iste natus error sit.</p>
                             </div>
                             <!-- END SINGLE DESC -->
 
@@ -557,7 +721,8 @@ to take the immigration attorney advisory services.</p>
                                 <div><i class="pe-7s-stopwatch" style="color:#008cc4;"></i></div>
                                 <!-- HEADING DESCRIPTION -->
                                 <h3>Lorem ipsum dolor sit amet</h3>
-                                <p>Cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit.</p>
+                                <p>Cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed
+                                    ut perspiciatis unde omnis iste natus error sit.</p>
                             </div>
                             <!-- END SINGLE DESC -->
 
@@ -566,14 +731,16 @@ to take the immigration attorney advisory services.</p>
                 </div>
             </div>
         </div>
-         <div class="video_area" style="display:none">
+        <div class="video_area" style="display:none">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 wow fadeInLeftBig">
-                    <!-- VIDEO LEFT TITLE -->
+                        <!-- VIDEO LEFT TITLE -->
                         <div class="video_title">
                             <h2>Best App <br>in the market</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip</p>
                         </div>
                         <div class="video-button">
                             <!-- BUTTON -->
@@ -581,7 +748,7 @@ to take the immigration attorney advisory services.</p>
                         </div>
                     </div>
                     <div class="col-md-6 wow fadeInRightBig">
-                         <!-- VIDEO -->
+                        <!-- VIDEO -->
                         <div class="video">
                             <!-- <iframe src="https://www.simplelaw.com/resources/img/updated/BrandFilm_v6.mp4" width="560" height="315"></iframe> -->
                         </div>
@@ -692,7 +859,7 @@ to take the immigration attorney advisory services.</p>
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </div>
@@ -706,7 +873,10 @@ to take the immigration attorney advisory services.</p>
                     <!-- FEATURES SECTION TITLE -->
                     <div class="section_title wow fadeIn" data-wow-duration="1s">
                         <h2>OUR SERVICES</h2>
-                        <p>Subscription to MemberPlus @ $19.99 per month will allow you to talk with Immigration lawyer at ILBSG for 60 mins in a subscription year. You can call up to 4 times for SLOT of 15 mins or for the entire 60 mins as one slot based on your need. Additional appointments are only $39.99 per 20 mins.</p>
+                        <p>Subscription to MemberPlus @ $19.99 per month will allow you to talk with Immigration lawyer at ILBSG
+                            for 60 mins in a subscription year. You can call up to 4 times for SLOT of 15 mins or for the
+                            entire 60 mins as one slot based on your need. Additional appointments are only $39.99 per 20
+                            mins.</p>
                     </div>
                     <!-- END FEATURES SECTION TITLE -->
                 </div>
@@ -750,17 +920,18 @@ to take the immigration attorney advisory services.</p>
 
                             <!-- FEATURE HEADING AND DESCRIPTION -->
                             <h3>PAYMENTS HISTORY</h3>
-                            <p>This feature allows the user to view the payment history and download the invoice for the subscription period. The user can link the PayPal account for monthly deduction for the portal subscription.</p>
+                            <p>This feature allows the user to view the payment history and download the invoice for the subscription
+                                period. The user can link the PayPal account for monthly deduction for the portal subscription.</p>
                         </div>
                         <!-- END SINGLE FEATURE -->
 
                     </div>
                     <div class="col-md-4">
-                       <!--  <div class="feature_iphone">
+                        <!--  <div class="feature_iphone">
                            FEATURE PHONE IMAGE
                            <img class="wow bounceIn" data-wow-duration="1s" src="img/person-1.png" alt="">
                        </div> -->
-                       <!-- FEATURE -->
+                        <!-- FEATURE -->
                         <div class="right_single_feature">
                             <!-- ICON -->
                             <div><span class="pe-7s-timer" style="color:#008cc4"></span></div>
@@ -821,7 +992,8 @@ to take the immigration attorney advisory services.</p>
 
                             <!-- FEATURE HEADING AND DESCRIPTION -->
                             <h3>Dashboard View</h3>
-                            <p>MemberPlus users can access latest articles on immigration matters authored by experienced attorneys which demystify the complex immigration matters.</p>
+                            <p>MemberPlus users can access latest articles on immigration matters authored by experienced attorneys
+                                which demystify the complex immigration matters.</p>
                         </div>
                         <!-- END SINGLE FEATURE -->
                     </div>
@@ -830,8 +1002,8 @@ to take the immigration attorney advisory services.</p>
         </div>
     </div>
 
-    
-   
+
+
 
     <!-- Testimonials Section
     ==========================================-->
@@ -848,17 +1020,23 @@ to take the immigration attorney advisory services.</p>
                     <div class="col-md-8 col-md-offset-2">
                         <div id="testimonial" class="owl-carousel owl-theme">
                             <div class="item">
-                                <h5>This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</h5>
+                                <h5>This book is a treatise on the theory of ethics, very popular during the Renaissance. The
+                                    first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section
+                                    1.10.32.</h5>
                                 <p><strong>Dean Martin</strong>, CEO Acme Inc.</p>
                             </div>
 
                             <div class="item">
-                                <h5>This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</h5>
+                                <h5>This book is a treatise on the theory of ethics, very popular during the Renaissance. The
+                                    first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section
+                                    1.10.32.</h5>
                                 <p><strong>Dean Martin</strong>, CEO Acme Inc.</p>
                             </div>
 
                             <div class="item">
-                                <h5>This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</h5>
+                                <h5>This book is a treatise on the theory of ethics, very popular during the Renaissance. The
+                                    first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section
+                                    1.10.32.</h5>
                                 <p><strong>Dean Martin</strong>, CEO Acme Inc.</p>
                             </div>
                         </div>
@@ -882,7 +1060,7 @@ to take the immigration attorney advisory services.</p>
                             <hr>
                         </div>
                         <div class="clearfix"></div>
-                        <small><em>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</em></small>            
+                        <small><em>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</em></small>
                     </div>
 
                     <form>
@@ -904,7 +1082,7 @@ to take the immigration attorney advisory services.</p>
                             <label for="exampleInputEmail1">Message</label>
                             <textarea class="form-control" rows="3"></textarea>
                         </div>
-                        
+
                         <button type="submit" class="btn tf-btn btn-default">Submit</button>
                     </form>
 
@@ -945,5 +1123,6 @@ to take the immigration attorney advisory services.</p>
     ================================================== -->
     <script type="text/javascript" src="js/main.js"></script>
 
-  </body>
+</body>
+
 </html>
