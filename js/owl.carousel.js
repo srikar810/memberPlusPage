@@ -1449,21 +1449,6 @@ if (typeof Object.create !== "function") {
         });
     };
 
-$(document).ready(function () {
-    var carousel = $("#team");
-  carousel.owlCarousel({
-    navigation:true,
-    navigationText: [
-      "<i class=\"fa fa-chevron-left\"></i>",
-      "<i class=\"fa fa-chevron-right\"></i>"
-      ],
-  });
-
-  
-});
-
-
-
     $.fn.owlCarousel.options = {
 
         items : 5,
