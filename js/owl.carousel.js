@@ -1449,6 +1449,21 @@ if (typeof Object.create !== "function") {
         });
     };
 
+$(document).ready(function () {
+    var carousel = $("#team");
+  carousel.owlCarousel({
+    navigation:true,
+    navigationText: [
+      "<i class=\"fa fa-chevron-left\"></i>",
+      "<i class=\"fa fa-chevron-right\"></i>"
+      ],
+  });
+
+  
+});
+
+
+
     $.fn.owlCarousel.options = {
 
         items : 5,
@@ -1473,7 +1488,7 @@ if (typeof Object.create !== "function") {
         rewindNav : true,
         scrollPerPage : false,
 
-        pagination : true,
+        pagination : false,
         paginationNumbers : false,
 
         responsive : true,

@@ -562,4 +562,23 @@ nav#footer p{
 #footer i.fa:hover{
 	background: #FCAC45;
 	border-color: #FCAC45;
-	color: #ffffff;
+	color: #ffffff;}
+
+	/*
+* 	Owl Carousel Owl Demo Theme 
+*	v1.23
+*/
+ 
+.owl-theme .owl-controls .owl-buttons div {
+  position: absolute;
+}
+ 
+.owl-theme .owl-controls .owl-buttons .owl-prev{
+  left: -45px;
+  top: 55px; 
+}
+ 
+.owl-theme .owl-controls .owl-buttons .owl-next{
+  right: -45px;
+  top: 55px;
+}
